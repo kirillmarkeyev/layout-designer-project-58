@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kirillmarkeyev/layout-designer-project-58/issues"
   },
-  "homepage": "https://github.com/kirillmarkeyev/layout-designer-project-58#readme"
+  "homepage": "https://github.com/kirillmarkeyev/layout-designer-project-58#readme",
+  "devDependencies": {
+    "surge": "^0.23.1"
+  }
 }
