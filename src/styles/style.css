@@ -2,33 +2,111 @@
     --white-background: #fff;
     --translucent-white-background: #d7ccc0;
     --light-background: #f5f4f0;
-    --main-background: #fe8a02;
+    --main: #fe8a02;
     --main-dark-background: #42413c;
-    --dark-background: #2a2626;
     --translucent-dark-background: #908d8b;
     --brown-background: #b09a81;
     --blue-background: #1085c5;
-    --main-color: #2A2626;
+    --dark-color: #2A2626;
 }
 
-section {
+@font-face {
+    font-family: "Neucha";
+    src: url("../fonts/Neucha-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: var(--light-background);
+    overflow: hidden;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+}
+
+.header__container {
     max-width: 1110px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
 }
 
-.h-common {
-    line-height: 1.2em;
-}
-
-.h1 {
+h1 {
     font-size: 72px;
+    font-weight: normal;
+    line-height: 1.2em;
+    font-family: "Neucha", sans-serif;
 }
 
-.h2 {
-    font-size: 60px;
+header img {
+    position: absolute;
+    top: 55px;
+    right: -270px;
+    height: 525px;
 }
 
-.h3 {
-    font-size: 34px;
+.flex-container div {
+    width: 540px;
+}
+
+p {
+    color: var(--dark-color);
+    line-height: 1.6em;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.orange {
+    color: var(--main);
+}
+
+.dark {
+    color: var(--dark-color);
+}
+
+.flex-container {
+    display: flex;
+    margin-top: 185px;
+    column-gap: 30px;
+}
+
+
+.flex-container button {
+    padding: 12px 24px;
+    margin-top: 40px;
+    border: none;
+    background-color: var(--main);
+    cursor: pointer;
+}
+
+.header__button {
+    color: var(--white-background);
+    line-height: 1.6em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
 }
