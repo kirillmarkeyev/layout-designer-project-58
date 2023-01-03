@@ -29,8 +29,8 @@
 header {
     width: 100%;
     background-color: var(--light-background);
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
 header::before {
@@ -59,6 +59,21 @@ h1 {
     font-weight: normal;
     line-height: 1.2em;
     font-family: "Neucha", sans-serif;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 1.2em;
+    font-family: "Neucha", sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
 }
 
 header img {
@@ -109,4 +124,26 @@ p {
     font-weight: bold;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
+}
+
+section {
+    width: 100%;
+    background-color: var(--white-background);
+}
+
+.section__container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
